@@ -1,0 +1,6 @@
+Open - SIngle decision. If the shop is closed then there is no sales. No need to include this feature in training. 
+
+References
+http://www.datasciencecentral.com/profiles/blogs/10-types-of-regressions-which-one-to-use
+
+http://aimotion.blogspot.com/2011/10/machine-learning-with-python-linear.html

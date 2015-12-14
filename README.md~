@@ -35,8 +35,5 @@ This script joins the two training data files into a single file. A simple outer
 
 4)CustPrediction.py
 This file does the prediction part. Further feature modification as well as proper usage of algorithm should be implemented to forecast the sales. 
-
-
-
 		
 

@@ -9,10 +9,10 @@ import datetime
 import numpy as np
 from datetime import timedelta
 from itertools import count
-train=pd.read_csv(r"C:\kaggle competitions\rossman store sales\train.csv")
+train=pd.read_csv(r"/media/raghu/DATA/Rossman-Store-sales/data/train.csv")
 
 
-store=pd.read_csv(r"C:\kaggle competitions\rossman store sales\store.csv")
+store=pd.read_csv(r"/media/raghu/DATA/Rossman-Store-sales/data/store.csv")
 store["CompetitionOpenSinceMonth"]=store["CompetitionOpenSinceMonth"].fillna(0)
 store["CompetitionOpenSinceYear"]=store["CompetitionOpenSinceYear"].fillna(0)
 store["CompetitionOpenSinceMonth"]=store["CompetitionOpenSinceMonth"].astype(int)
@@ -46,5 +46,5 @@ store=store.rename(columns={'YearStartPromo2':'Promo2StartDate'})
 
 store["CompetitionStartDate"]=store["CompetitionStartDate"].fillna(np.datetime64("2012-09-01"))       
 print store.info()                                   
-store.to_csv(r"C:\kaggle competitions\rossman store sales\store1.csv",sep=',')
+store.to_csv(r"/media/raghu/DATA/Rossman-Store-sales/outputs/store1.csv",sep=',')
 

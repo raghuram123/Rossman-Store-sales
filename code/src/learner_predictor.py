@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import scipy.io
 ctrain=pd.read_csv(r"C:\kaggle competitions\rossman store sales\complete_train.csv")
-'''
+
 a=[]
 temp=ctrain.loc[ctrain["StoreType"]=="a"]
 avg=temp["Customers"].mean()
@@ -45,7 +45,7 @@ temp=ctrain.loc[ctrain["Promo"]==0]
 avg=temp["Customers"].mean()
 a.append(avg)
 scipy.io.savemat(r"C:\kaggle competitions\rossman store sales\CustVSPromo.mat",mdict={'avg3':a})
-'''
+
 print len(ctrain["CompetitionDistance"].unique())
 
 print ctrain["PromoInterval"].unique()

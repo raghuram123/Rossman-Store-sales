@@ -1,0 +1,24 @@
+predictors = ["Promo", "Assortment", "CompetitionDistance", "StoreType", "Promo2", "Open"];
+
+n_estimators=100
+learning_rate=0.001
+r2 score=0.431041582348
+cvscore=0.54030127729
+
+n_estimators=100
+learning_rate=0.0001
+r2 score=0.433661838655
+cvscore=0.540358860768
+
+predictors = ["temp","Promo", "Assortment", "CompetitionDistance", "StoreType", "Promo2", "Open"];
+
+n_estimators=100
+learning_rate=0.0001
+r2 score=0.433946634551
+cv_score=0.540364045785
+
+500
+0.0001
+r2 score
+0.432495557346
+0.540331004911

@@ -1,0 +1,40 @@
+Random Forests
+
+750,0.6,10,20. 
+0.27438
+
+750,0.6,20,20
+
+------------------------------------------------------------------------------------
+
+predictors = ["DaysSinceLastPromo2","Store","Promo", "Assortment", "CompetitionDistance", "StoreType", "Promo2", "Open","DayOfWeek","StateHoliday","SchoolHoliday"];
+
+
+RandomForestRegressor(n_estimators=750 ,max_features=0.6,min_samples_split=20,min_samples_leaf=20,n_jobs=-1,random_state=1,oob_score=True)
+
+Score : 0.17093
+
+------------------------------------------------------------------------------------------------
+
+predictors = ["Promo2Indicator","Store","Promo", "Assortment", "CompetitionDistance", "StoreType","Open","DayOfWeek","StateHoliday","SchoolHoliday"];
+
+RandomForestRegressor(n_estimators=750 ,max_features=0.6,min_samples_split=20,min_samples_leaf=20,n_jobs=-1,random_state=1,oob_score=True)
+
+Score: 0.17224
+---------------------------------------------------------------------------------------------------------------------------
+
+predictors = ["WeekOfYear","Promo2Indicator","Store","Promo", "Assortment", "CompetitionDistance", "StoreType","Open","DayOfWeek","StateHoliday","SchoolHoliday"];
+
+RandomForestRegressor(n_estimators=750 ,max_features=0.6,min_samples_split=20,min_samples_leaf=20,n_jobs=-1,random_state=1,oob_score=True)
+
+score : 0.15137
+------------------------------------------------------------------------------------------------------------------------
+
+predictors = ["Month","WeekOfYear","Promo2Indicator","Store","Promo", "Assortment", "CompetitionDistance", "StoreType","Open","DayOfWeek","StateHoliday","SchoolHoliday"];
+
+RandomForestRegressor(n_estimators=750 ,max_features=0.6,min_samples_split=20,min_samples_leaf=20,n_jobs=-1,random_state=1,oob_score=True)
+
+0.14904
+
+
+

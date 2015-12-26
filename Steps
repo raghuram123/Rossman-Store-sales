@@ -1,0 +1,30 @@
+
+1) Modifying the store.csv file. (store_feature_modulator.py)
+	
+	a)Create a field called CompetitionStartDate that combines the fields CompetitionOpenSinceMonth and CompetitionOpenSinceYear
+	b)Fill the null values of CompetitionStartDate with mode of that coloumn
+	c)Fill the null values of CompetitionDistance with mean values of CompetitionDistance
+	d)Create a field called "YearStartPromo2" by combining "Promo2SinceWeek" and "Promo2SinceYear". 
+	e) YearStartPromo2 is the date of the start of "Promo2SinceWeek" in the year "Promo2SinceYear"
+	f) Delete unwanted coloumns
+	g)Write it the new file Store1.csv
+
+2) Joining Store1.csv and train.csv (join_train_store1.py)
+
+	a) Created a new file complete_train.csv
+
+3) Split the Promo2Interval field by commas into four different fields (Done in excel itself)
+	a) Named the 4 fields as "Month1", "Month2", "Month3", "Month4". 
+
+4)PromoFeatureModify.py (Modifying some more features)
+
+	a)Converted the four fields into number representations of months
+	b)Filled the null values of months with 0
+	c)Used those months to create temporary dates for the current year. 
+	d)Created the number of days from those dates to the present date. 
+	e)Found out the minimum among those four and deleted other fields manually. 
+
+5)CustPrediction.py
+	
+	a)Development of model, learning and prediction. 
+	b)Following things are self explanatory. 

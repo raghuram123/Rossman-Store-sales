@@ -1,6 +1,6 @@
 # Rossman-Store-sales
 
-This is an ongoing Kaggle project https://www.kaggle.com/c/rossmann-store-sales
+This is a Kaggle project https://www.kaggle.com/c/rossmann-store-sales
 The data is placed in the "data directory". 
 
 The full project problem specified in this link. 
